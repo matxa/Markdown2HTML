@@ -6,7 +6,7 @@ from os import path
 
 
 # Check for Usage
-if len(argv) < 3:
+if len(argv) == 3:
     print("Usage: ./markdown2html.py README.md README.html")
     exit(1)
 if not path.exists(argv[1]):
