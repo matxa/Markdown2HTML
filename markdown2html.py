@@ -12,8 +12,6 @@ if len(argv) != 3:
 elif not path.exists(argv[1]):
     print("Missing {}".format(argv[1]))
     exit(1)
-else:
-    exit(0)
 
 html = []
 unordered_list = ''
