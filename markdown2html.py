@@ -9,9 +9,11 @@ from os import path
 if len(argv) != 3:
     print("Usage: ./markdown2html.py README.md README.html")
     exit(1)
-if not path.exists(argv[1]):
+elif not path.exists(argv[1]):
     print("Missing {}".format(argv[1]))
     exit(1)
+else:
+    exit(0)
 
 html = []
 unordered_list = ''
