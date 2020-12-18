@@ -37,7 +37,7 @@ if __name__ == "__main__":
                 html.append(line_html)
 
             # convert markdown unordered list to html unordered list
-            if '-' in line[0] and ' ' in line[1]:
+            elif '-' in line[0] and ' ' in line[1]:
                 if '<li>' not in unordered_list:
                     unordered_list = '<ul>\n'
                 line_cp = line.replace('- ', '')
@@ -55,7 +55,7 @@ if __name__ == "__main__":
                     unordered_list = ''
 
             # convert markdown ordered list to html ordered list
-            if '*' in line[0] and ' ' in line[1]:
+            elif '*' in line[0] and ' ' in line[1]:
                 if '<li>' not in ordered_list:
                     ordered_list = '<ol>\n'
                 line_cp = line.replace('* ', '')
